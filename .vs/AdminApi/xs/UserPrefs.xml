@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{9D2E77A6-E039-4933-A2E4-1883A8610574}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdminApi/Controllers/UserController.cs">
+    <Files>
+      <File FileName="Extensions/JwtHelper.cs" Line="22" Column="75" />
+      <File FileName="AdminApi/appsettings.json" Line="14" Column="22" />
+      <File FileName="Extensions/Appsettings.cs" Line="61" Column="17" />
+      <File FileName="AdminApi/Program.cs" Line="35" Column="5" />
+      <File FileName="Extensions/SHA256Encryption.cs" Line="1" Column="1" />
+      <File FileName="Extensions/UtilConvert.cs" Line="180" Column="2" />
+      <File FileName="Model/MessageModel.cs" Line="15" Column="22" />
+      <File FileName="AdminApi/Startup.cs" Line="101" Column="37" />
+      <File FileName="Model/tokenParameter.cs" Line="6" Column="1" />
+      <File FileName="AdminApi/Controllers/UserController.cs" Line="38" Column="62" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AdminApi" expanded="True">
+            <Node name="AdminApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Extensions" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+            <Node name="Model" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AdminApi PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

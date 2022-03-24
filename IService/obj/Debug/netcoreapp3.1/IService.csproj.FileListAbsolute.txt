@@ -1,0 +1,10 @@
+/Users/mrc/Documents/Admin/AdminApi/IService/bin/Debug/netcoreapp3.1/IService.deps.json
+/Users/mrc/Documents/Admin/AdminApi/IService/bin/Debug/netcoreapp3.1/IService.dll
+/Users/mrc/Documents/Admin/AdminApi/IService/bin/Debug/netcoreapp3.1/IService.pdb
+/Users/mrc/Documents/Admin/AdminApi/IService/obj/Debug/netcoreapp3.1/IService.csproj.AssemblyReference.cache
+/Users/mrc/Documents/Admin/AdminApi/IService/obj/Debug/netcoreapp3.1/IService.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mrc/Documents/Admin/AdminApi/IService/obj/Debug/netcoreapp3.1/IService.AssemblyInfoInputs.cache
+/Users/mrc/Documents/Admin/AdminApi/IService/obj/Debug/netcoreapp3.1/IService.AssemblyInfo.cs
+/Users/mrc/Documents/Admin/AdminApi/IService/obj/Debug/netcoreapp3.1/IService.csproj.CoreCompileInputs.cache
+/Users/mrc/Documents/Admin/AdminApi/IService/obj/Debug/netcoreapp3.1/IService.dll
+/Users/mrc/Documents/Admin/AdminApi/IService/obj/Debug/netcoreapp3.1/IService.pdb

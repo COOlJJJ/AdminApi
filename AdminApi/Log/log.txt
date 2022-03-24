@@ -1,0 +1,144 @@
+2022-02-26 15:22:33.581 +08:00 [INF] Starting host
+2022-02-26 15:22:34.901 +08:00 [INF] Now listening on: http://localhost:5000
+2022-02-26 15:22:34.907 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-26 15:22:34.907 +08:00 [INF] Hosting environment: Development
+2022-02-26 15:22:34.907 +08:00 [INF] Content root path: /Users/mrc/Documents/Admin/AdminApi/AdminApi
+2022-02-26 15:22:36.168 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2022-02-26 15:22:36.247 +08:00 [INF] HTTP GET /index.html responded 200 in 74.245988 ms
+2022-02-26 15:22:36.252 +08:00 [INF] Request finished in 87.2451ms 200 text/html;charset=utf-8
+2022-02-26 15:22:36.427 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2022-02-26 15:22:36.501 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 73.193121 ms
+2022-02-26 15:22:36.504 +08:00 [INF] Request finished in 76.4234ms 200 application/json;charset=utf-8
+2022-02-26 15:40:16.145 +08:00 [INF] Starting host
+2022-02-26 15:40:17.505 +08:00 [INF] Now listening on: http://localhost:5000
+2022-02-26 15:40:17.511 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-26 15:40:17.511 +08:00 [INF] Hosting environment: Development
+2022-02-26 15:40:17.511 +08:00 [INF] Content root path: /Users/mrc/Documents/Admin/AdminApi/AdminApi
+2022-02-26 15:40:18.901 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2022-02-26 15:40:18.995 +08:00 [INF] HTTP GET /index.html responded 200 in 86.136467 ms
+2022-02-26 15:40:18.999 +08:00 [INF] Request finished in 101.0374ms 200 text/html;charset=utf-8
+2022-02-26 15:40:19.247 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2022-02-26 15:40:19.340 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 91.763074 ms
+2022-02-26 15:40:19.340 +08:00 [INF] Request finished in 93.0904ms 200 application/json;charset=utf-8
+2022-02-26 15:43:34.738 +08:00 [INF] Starting host
+2022-02-26 15:43:35.992 +08:00 [INF] Now listening on: http://localhost:5000
+2022-02-26 15:43:35.998 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-26 15:43:35.998 +08:00 [INF] Hosting environment: Development
+2022-02-26 15:43:35.998 +08:00 [INF] Content root path: /Users/mrc/Documents/Admin/AdminApi/AdminApi
+2022-02-26 15:43:37.339 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2022-02-26 15:43:37.425 +08:00 [INF] HTTP GET /index.html responded 200 in 80.114442 ms
+2022-02-26 15:43:37.429 +08:00 [INF] Request finished in 93.2904ms 200 text/html;charset=utf-8
+2022-02-26 15:43:37.636 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2022-02-26 15:43:37.677 +08:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 40.947521 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AdminApi.Controllers.UserController.SHA256Hash (AdminApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-02-26 15:43:37.727 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AdminApi.Controllers.UserController.SHA256Hash (AdminApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-26 15:43:37.747 +08:00 [INF] Request finished in 110.9531ms 500 text/plain
+2022-02-26 15:44:14.782 +08:00 [INF] Starting host
+2022-02-26 15:44:16.014 +08:00 [INF] Now listening on: http://localhost:5000
+2022-02-26 15:44:16.020 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-26 15:44:16.020 +08:00 [INF] Hosting environment: Development
+2022-02-26 15:44:16.020 +08:00 [INF] Content root path: /Users/mrc/Documents/Admin/AdminApi/AdminApi
+2022-02-26 15:44:17.278 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2022-02-26 15:44:17.352 +08:00 [INF] HTTP GET /index.html responded 200 in 68.816521 ms
+2022-02-26 15:44:17.357 +08:00 [INF] Request finished in 81.9847ms 200 text/html;charset=utf-8
+2022-02-26 15:44:17.525 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2022-02-26 15:44:17.589 +08:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 64.099449 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AdminApi.Controllers.UserController.SHA256Hash (AdminApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-02-26 15:44:17.630 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AdminApi.Controllers.UserController.SHA256Hash (AdminApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-26 15:44:17.646 +08:00 [INF] Request finished in 121.0734ms 500 text/plain
+2022-02-26 15:46:46.696 +08:00 [INF] Starting host
+2022-02-26 15:46:47.994 +08:00 [INF] Now listening on: http://localhost:5000
+2022-02-26 15:46:47.999 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-26 15:46:47.999 +08:00 [INF] Hosting environment: Development
+2022-02-26 15:46:48.000 +08:00 [INF] Content root path: /Users/mrc/Documents/Admin/AdminApi/AdminApi
+2022-02-26 15:46:49.274 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2022-02-26 15:46:49.358 +08:00 [INF] HTTP GET /index.html responded 200 in 76.902112 ms
+2022-02-26 15:46:49.363 +08:00 [INF] Request finished in 92.9664ms 200 text/html;charset=utf-8
+2022-02-26 15:46:49.553 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2022-02-26 15:46:49.631 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 77.571454 ms
+2022-02-26 15:46:49.635 +08:00 [INF] Request finished in 81.9338ms 200 application/json;charset=utf-8
+2022-02-26 15:46:53.628 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/User  
+2022-02-26 15:46:53.655 +08:00 [INF] Executing endpoint 'AdminApi.Controllers.UserController.Get (AdminApi)'
+2022-02-26 15:46:53.674 +08:00 [INF] Route matched with {action = "Get", controller = "User"}. Executing controller action with signature System.String Get() on controller AdminApi.Controllers.UserController (AdminApi).
+2022-02-26 15:46:53.691 +08:00 [INF] ‘AdminApi.Controllers.UserController’ This is index -- information.
+2022-02-26 15:46:53.692 +08:00 [WRN] This is index -- warning.
+2022-02-26 15:46:53.692 +08:00 [ERR] This is index -- error.
+2022-02-26 15:46:54.137 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-02-26 15:46:54.143 +08:00 [INF] Executed action AdminApi.Controllers.UserController.Get (AdminApi) in 463.697ms
+2022-02-26 15:46:54.144 +08:00 [INF] Executed endpoint 'AdminApi.Controllers.UserController.Get (AdminApi)'
+2022-02-26 15:46:54.144 +08:00 [INF] HTTP GET /api/User responded 200 in 514.567037 ms
+2022-02-26 15:46:54.144 +08:00 [INF] Request finished in 515.8092ms 200 text/plain; charset=utf-8
+2022-03-01 21:16:36.666 +08:00 [INF] Starting host
+2022-03-01 21:16:37.755 +08:00 [INF] User profile is available. Using '/Users/mrc/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-03-01 21:16:37.955 +08:00 [INF] Creating key "51859986-b1fc-4140-adf8-9fd1f3e00ff0" with creation date "2022-03-01T13:16:37.9517080+00:00", activation date "2022-03-01T13:16:37.7751680+00:00", and expiration date "2022-05-30T13:16:37.7751680+00:00".
+2022-03-01 21:16:37.962 +08:00 [WRN] No XML encryptor configured. Key "51859986-b1fc-4140-adf8-9fd1f3e00ff0" may be persisted to storage in unencrypted form.
+2022-03-01 21:16:37.963 +08:00 [INF] Writing data to file '/Users/mrc/.aspnet/DataProtection-Keys/key-51859986-b1fc-4140-adf8-9fd1f3e00ff0.xml'.
+2022-03-01 21:16:38.247 +08:00 [INF] Now listening on: http://localhost:5000
+2022-03-01 21:16:38.247 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-01 21:16:38.247 +08:00 [INF] Hosting environment: Development
+2022-03-01 21:16:38.247 +08:00 [INF] Content root path: /Users/mrc/Documents/Admin/AdminApi/AdminApi
+2022-03-01 21:16:41.480 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2022-03-01 21:16:41.513 +08:00 [INF] HTTP GET / responded 301 in 20.538031 ms
+2022-03-01 21:16:41.516 +08:00 [INF] Request finished in 40.4187ms 0 
+2022-03-01 21:16:41.627 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2022-03-01 21:16:41.708 +08:00 [INF] HTTP GET /index.html responded 200 in 81.130696 ms
+2022-03-01 21:16:41.709 +08:00 [INF] Request finished in 81.8919ms 200 text/html;charset=utf-8
+2022-03-01 21:16:42.123 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon-32x32.png  
+2022-03-01 21:16:42.144 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2022-03-01 21:16:42.158 +08:00 [INF] Connection id "0HMFRGMRSTF8V", Request id "0HMFRGMRSTF8V:00000002": the application aborted the connection.
+2022-03-01 21:16:42.159 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-03-01 21:16:42.159 +08:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 35.053069 ms
+2022-03-01 21:16:42.160 +08:00 [INF] Request finished in 37.2674ms 0 image/png
+2022-03-01 21:16:42.276 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 132.37901 ms
+2022-03-01 21:16:42.277 +08:00 [INF] Request finished in 133.3484ms 200 application/json;charset=utf-8
+2022-03-09 18:37:40.155 +08:00 [INF] Starting host
+2022-03-09 18:37:41.345 +08:00 [INF] User profile is available. Using '/Users/mrc/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-03-09 18:37:41.972 +08:00 [INF] Now listening on: http://localhost:5000
+2022-03-09 18:37:41.973 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-09 18:37:41.973 +08:00 [INF] Hosting environment: Development
+2022-03-09 18:37:41.974 +08:00 [INF] Content root path: /Users/mrc/Documents/Admin/AdminApi/AdminApi
+2022-03-09 18:37:49.716 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2022-03-09 18:37:49.758 +08:00 [INF] HTTP GET / responded 301 in 25.560794 ms
+2022-03-09 18:37:49.765 +08:00 [INF] Request finished in 56.5696ms 0 
+2022-03-09 18:37:49.823 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2022-03-09 18:37:49.958 +08:00 [INF] HTTP GET /index.html responded 200 in 134.41109 ms
+2022-03-09 18:37:49.959 +08:00 [INF] Request finished in 135.7295ms 200 text/html;charset=utf-8
+2022-03-09 18:37:50.208 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger-ui-standalone-preset.js  
+2022-03-09 18:37:50.208 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger-ui.css  
+2022-03-09 18:37:50.208 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger-ui-bundle.js  
+2022-03-09 18:37:50.244 +08:00 [INF] The file /swagger-ui-bundle.js was not modified
+2022-03-09 18:37:50.244 +08:00 [INF] The file /swagger-ui.css was not modified
+2022-03-09 18:37:50.244 +08:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2022-03-09 18:37:50.245 +08:00 [INF] HTTP GET /swagger-ui.css responded 304 in 35.107472 ms
+2022-03-09 18:37:50.245 +08:00 [INF] HTTP GET /swagger-ui-standalone-preset.js responded 304 in 35.135176 ms
+2022-03-09 18:37:50.245 +08:00 [INF] HTTP GET /swagger-ui-bundle.js responded 304 in 35.217162 ms
+2022-03-09 18:37:50.246 +08:00 [INF] Request finished in 38.7519ms 304 application/javascript
+2022-03-09 18:37:50.246 +08:00 [INF] Request finished in 38.7665ms 304 text/css
+2022-03-09 18:37:50.246 +08:00 [INF] Request finished in 37.687ms 304 application/javascript
+2022-03-09 18:37:50.627 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2022-03-09 18:37:50.877 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 249.230427 ms
+2022-03-09 18:37:50.878 +08:00 [INF] Request finished in 251.9985ms 200 application/json;charset=utf-8

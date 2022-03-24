@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "V4S55ft0FvG2xNTqwhjnUVKUnxA23ocF2I04AsZJPFPyXw2IwlZZ9aH4xXzEaggSTx1hJDRjFrg3uRRjvDM9Ig==",
+  "success": true,
+  "projectFilePath": "/Users/mrc/Documents/Admin/AdminApi/Extensions/Extensions.csproj",
+  "expectedPackageFiles": [
+    "/Users/mrc/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.extensions.configuration/3.1.0/microsoft.extensions.configuration.3.1.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.0/microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.extensions.configuration.binder/3.1.0/microsoft.extensions.configuration.binder.3.1.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.extensions.configuration.fileextensions/3.1.0/microsoft.extensions.configuration.fileextensions.3.1.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.extensions.configuration.json/3.1.0/microsoft.extensions.configuration.json.3.1.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.0/microsoft.extensions.fileproviders.abstractions.3.1.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.extensions.fileproviders.physical/3.1.0/microsoft.extensions.fileproviders.physical.3.1.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.extensions.filesystemglobbing/3.1.0/microsoft.extensions.filesystemglobbing.3.1.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.extensions.primitives/3.1.0/microsoft.extensions.primitives.3.1.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.16.0/microsoft.identitymodel.jsonwebtokens.6.16.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.identitymodel.logging/6.16.0/microsoft.identitymodel.logging.6.16.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/microsoft.identitymodel.tokens/6.16.0/microsoft.identitymodel.tokens.6.16.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/system.identitymodel.tokens.jwt/6.16.0/system.identitymodel.tokens.jwt.6.16.0.nupkg.sha512",
+    "/Users/mrc/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

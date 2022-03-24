@@ -1,0 +1,10 @@
+/Users/mrc/Documents/Admin/AdminApi/Extensions/obj/Debug/netcoreapp3.1/Extensions.csproj.AssemblyReference.cache
+/Users/mrc/Documents/Admin/AdminApi/Extensions/obj/Debug/netcoreapp3.1/Extensions.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mrc/Documents/Admin/AdminApi/Extensions/obj/Debug/netcoreapp3.1/Extensions.AssemblyInfoInputs.cache
+/Users/mrc/Documents/Admin/AdminApi/Extensions/obj/Debug/netcoreapp3.1/Extensions.AssemblyInfo.cs
+/Users/mrc/Documents/Admin/AdminApi/Extensions/obj/Debug/netcoreapp3.1/Extensions.csproj.CoreCompileInputs.cache
+/Users/mrc/Documents/Admin/AdminApi/Extensions/bin/Debug/netcoreapp3.1/Extensions.deps.json
+/Users/mrc/Documents/Admin/AdminApi/Extensions/bin/Debug/netcoreapp3.1/Extensions.dll
+/Users/mrc/Documents/Admin/AdminApi/Extensions/bin/Debug/netcoreapp3.1/Extensions.pdb
+/Users/mrc/Documents/Admin/AdminApi/Extensions/obj/Debug/netcoreapp3.1/Extensions.dll
+/Users/mrc/Documents/Admin/AdminApi/Extensions/obj/Debug/netcoreapp3.1/Extensions.pdb

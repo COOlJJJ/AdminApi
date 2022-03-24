@@ -1,0 +1,10 @@
+/Users/mrc/Documents/Admin/AdminApi/Service/bin/Debug/netcoreapp3.1/Service.deps.json
+/Users/mrc/Documents/Admin/AdminApi/Service/bin/Debug/netcoreapp3.1/Service.dll
+/Users/mrc/Documents/Admin/AdminApi/Service/bin/Debug/netcoreapp3.1/Service.pdb
+/Users/mrc/Documents/Admin/AdminApi/Service/obj/Debug/netcoreapp3.1/Service.csproj.AssemblyReference.cache
+/Users/mrc/Documents/Admin/AdminApi/Service/obj/Debug/netcoreapp3.1/Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mrc/Documents/Admin/AdminApi/Service/obj/Debug/netcoreapp3.1/Service.AssemblyInfoInputs.cache
+/Users/mrc/Documents/Admin/AdminApi/Service/obj/Debug/netcoreapp3.1/Service.AssemblyInfo.cs
+/Users/mrc/Documents/Admin/AdminApi/Service/obj/Debug/netcoreapp3.1/Service.csproj.CoreCompileInputs.cache
+/Users/mrc/Documents/Admin/AdminApi/Service/obj/Debug/netcoreapp3.1/Service.dll
+/Users/mrc/Documents/Admin/AdminApi/Service/obj/Debug/netcoreapp3.1/Service.pdb
