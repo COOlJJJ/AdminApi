@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using AdminApi.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Model;
 using Serilog;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdminApi
 {
@@ -26,6 +28,11 @@ namespace AdminApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<ILogger>(Log.Logger);
+            services.AddDbContext<AdminContext>(option =>
+            {
+                var connectionString = Configuration.GetConnectionString("SqlStr");
+                option.UseSqlServer(connectionString);
+            });
 
             services.AddControllers();
             services.AddCors(options => { options.AddPolicy("CorsPolicy", builder => builder.SetIsOriginAllowed((host) => true).AllowAnyMethod().AllowAnyHeader().AllowCredentials()); });

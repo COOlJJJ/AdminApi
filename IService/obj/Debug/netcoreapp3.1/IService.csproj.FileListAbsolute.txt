@@ -8,3 +8,13 @@
 /Users/mrc/Documents/Admin/AdminApi/IService/obj/Debug/netcoreapp3.1/IService.csproj.CoreCompileInputs.cache
 /Users/mrc/Documents/Admin/AdminApi/IService/obj/Debug/netcoreapp3.1/IService.dll
 /Users/mrc/Documents/Admin/AdminApi/IService/obj/Debug/netcoreapp3.1/IService.pdb
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\IService\bin\Debug\netcoreapp3.1\IService.deps.json
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\IService\bin\Debug\netcoreapp3.1\IService.dll
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\IService\bin\Debug\netcoreapp3.1\IService.pdb
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\IService\obj\Debug\netcoreapp3.1\IService.csproj.AssemblyReference.cache
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\IService\obj\Debug\netcoreapp3.1\IService.GeneratedMSBuildEditorConfig.editorconfig
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\IService\obj\Debug\netcoreapp3.1\IService.AssemblyInfoInputs.cache
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\IService\obj\Debug\netcoreapp3.1\IService.AssemblyInfo.cs
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\IService\obj\Debug\netcoreapp3.1\IService.csproj.CoreCompileInputs.cache
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\IService\obj\Debug\netcoreapp3.1\IService.dll
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\IService\obj\Debug\netcoreapp3.1\IService.pdb
