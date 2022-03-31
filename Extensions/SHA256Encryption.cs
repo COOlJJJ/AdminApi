@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Extensions
 {
-	public class SHA256Encryption
+	public static class SHA256Encryption
 	{
         public static string SHA256Hash(string str)
         {

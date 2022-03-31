@@ -6,7 +6,7 @@ namespace Model
         /// <summary>
         /// 状态码
         /// </summary>
-        public int Status { get; set; } = 200;
+        public int Status { get; set; } = 201;
 
         /// <summary>
         /// 返回信息

@@ -12,6 +12,10 @@ using Microsoft.OpenApi.Models;
 using Model;
 using Serilog;
 using Microsoft.EntityFrameworkCore;
+using AdminApi.Context.DomainModel;
+using AdminApi.Context.Repository;
+using AdminApi.IService;
+using AdminApi.Service;
 
 namespace AdminApi
 {
@@ -32,7 +36,14 @@ namespace AdminApi
             {
                 var connectionString = Configuration.GetConnectionString("SqlStr");
                 option.UseSqlServer(connectionString);
-            });
+            }).AddUnitOfWork<AdminContext>()
+            .AddCustomRepository<User, UserRepository>()
+            .AddCustomRepository<Role, RoleRepository>()
+            .AddCustomRepository<UserRole, UserRoleRepository>();
+
+
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IRoleService, RoleService>();
 
             services.AddControllers();
             services.AddCors(options => { options.AddPolicy("CorsPolicy", builder => builder.SetIsOriginAllowed((host) => true).AllowAnyMethod().AllowAnyHeader().AllowCredentials()); });

@@ -179,3 +179,53 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP meth
 2022-03-26 08:53:36.354 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 92.8444 ms
 2022-03-26 08:53:36.362 +08:00 [INF] Request finished in 105.8555ms 200 application/json;charset=utf-8
 2022-03-26 11:39:24.720 +08:00 [INF] Starting host
+2022-03-31 10:35:08.910 +08:00 [INF] Starting host
+2022-03-31 10:35:10.302 +08:00 [INF] User profile is available. Using 'C:\Users\Z0047YMR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 10:35:10.911 +08:00 [INF] Now listening on: http://localhost:5000
+2022-03-31 10:35:10.912 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 10:35:10.913 +08:00 [INF] Hosting environment: Development
+2022-03-31 10:35:10.914 +08:00 [INF] Content root path: D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\AdminApi
+2022-03-31 10:35:12.073 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2022-03-31 10:35:12.162 +08:00 [INF] HTTP GET /index.html responded 200 in 72.2211 ms
+2022-03-31 10:35:12.168 +08:00 [INF] Request finished in 100.1857ms 200 text/html;charset=utf-8
+2022-03-31 10:35:12.354 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2022-03-31 10:35:12.434 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 77.1393 ms
+2022-03-31 10:35:12.438 +08:00 [INF] Request finished in 83.6602ms 200 application/json;charset=utf-8
+2022-03-31 10:35:30.649 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Login/LoginAsync?Account=83904744&Password=123456  
+2022-03-31 10:35:31.027 +08:00 [INF] Executing endpoint 'AdminApi.Controllers.LoginController.LoginAsync (AdminApi)'
+2022-03-31 10:35:31.057 +08:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Model.MessageModel`1[Model.TokenInfoViewModel]] LoginAsync(System.String, System.String) on controller AdminApi.Controllers.LoginController (AdminApi).
+2022-03-31 10:35:40.589 +08:00 [INF] Entity Framework Core 3.1.10 initialized 'AdminContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-03-31 10:35:41.281 +08:00 [INF] Executed DbCommand (58ms) [Parameters=[@__Account_0='?' (Size = 4000), @__Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Account], [u].[CreateDate], [u].[Email], [u].[PassWord], [u].[ReMark], [u].[Status], [u].[UpdateDate], [u].[UserName]
+FROM [User] AS [u]
+WHERE (([u].[Account] = @__Account_0) AND ([u].[PassWord] = @__Password_1)) AND ([u].[Status] = 1)
+2022-03-31 10:35:44.356 +08:00 [INF] Executing ObjectResult, writing value of type 'Model.MessageModel`1[[Model.TokenInfoViewModel, Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-03-31 10:35:44.366 +08:00 [INF] Executed action AdminApi.Controllers.LoginController.LoginAsync (AdminApi) in 13303.5201ms
+2022-03-31 10:35:44.369 +08:00 [INF] Executed endpoint 'AdminApi.Controllers.LoginController.LoginAsync (AdminApi)'
+2022-03-31 10:35:44.372 +08:00 [INF] HTTP GET /api/Login/LoginAsync?Account=83904744&Password=123456 responded 200 in 13720.7671 ms
+2022-03-31 10:35:44.376 +08:00 [INF] Request finished in 13727.5445ms 200 application/json; charset=utf-8
+2022-03-31 10:49:52.377 +08:00 [INF] Starting host
+2022-03-31 10:49:53.378 +08:00 [INF] User profile is available. Using 'C:\Users\Z0047YMR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 10:49:53.702 +08:00 [INF] Now listening on: http://localhost:5000
+2022-03-31 10:49:53.703 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 10:49:53.704 +08:00 [INF] Hosting environment: Development
+2022-03-31 10:49:53.705 +08:00 [INF] Content root path: D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\AdminApi
+2022-03-31 10:49:59.535 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2022-03-31 10:49:59.583 +08:00 [INF] HTTP GET /index.html responded 200 in 38.7335 ms
+2022-03-31 10:49:59.590 +08:00 [INF] Request finished in 57.4379ms 200 text/html;charset=utf-8
+2022-03-31 10:49:59.754 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2022-03-31 10:49:59.816 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 60.8392 ms
+2022-03-31 10:49:59.819 +08:00 [INF] Request finished in 64.8781ms 200 application/json;charset=utf-8
+2022-03-31 10:50:14.143 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Login/LoginAsync?Account=83904744&Password=123456  
+2022-03-31 10:50:14.226 +08:00 [INF] Executing endpoint 'AdminApi.Controllers.LoginController.LoginAsync (AdminApi)'
+2022-03-31 10:50:14.252 +08:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Model.MessageModel`1[Model.TokenInfoViewModel]] LoginAsync(System.String, System.String) on controller AdminApi.Controllers.LoginController (AdminApi).
+2022-03-31 10:50:17.209 +08:00 [INF] Entity Framework Core 3.1.10 initialized 'AdminContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-03-31 10:50:17.659 +08:00 [INF] Executed DbCommand (54ms) [Parameters=[@__Account_0='?' (Size = 4000), @__Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Account], [u].[CreateDate], [u].[Email], [u].[PassWord], [u].[ReMark], [u].[Status], [u].[UpdateDate], [u].[UserName]
+FROM [User] AS [u]
+WHERE (([u].[Account] = @__Account_0) AND ([u].[PassWord] = @__Password_1)) AND ([u].[Status] = 1)
+2022-03-31 10:50:29.240 +08:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2022-03-31 10:50:29.246 +08:00 [INF] Executed action AdminApi.Controllers.LoginController.LoginAsync (AdminApi) in 14988.4501ms
+2022-03-31 10:50:29.249 +08:00 [INF] Executed endpoint 'AdminApi.Controllers.LoginController.LoginAsync (AdminApi)'
+2022-03-31 10:50:29.251 +08:00 [INF] HTTP GET /api/Login/LoginAsync?Account=83904744&Password=123456 responded 204 in 15104.8596 ms
+2022-03-31 10:50:29.255 +08:00 [INF] Request finished in 15112.8464ms 204 

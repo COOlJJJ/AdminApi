@@ -6,7 +6,6 @@ using Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace AdminApi.Controllers
 {
@@ -39,20 +38,6 @@ namespace AdminApi.Controllers
             }
         }
 
-
-
-        //// GET api/values/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
 
     }
 }
