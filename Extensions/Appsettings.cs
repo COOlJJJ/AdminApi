@@ -13,6 +13,7 @@ namespace Extensions
     {
         public static IConfiguration Configuration { get; set; }
 
+ 
         public Appsettings(string contentPath)
         {
             string Path = "appsettings.json";

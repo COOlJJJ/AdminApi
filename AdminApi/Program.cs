@@ -8,6 +8,10 @@ namespace AdminApi
 {
     public class Program
     {
+        /// <summary>
+        /// 基础的用户管理和分配权限 以及JWT滑动刷新&Redis缓存测试&MQ集成&Docker容器化
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             // Create the Serilog logger, and configure the sinks

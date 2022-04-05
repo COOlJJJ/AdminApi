@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Model;
 using Serilog;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace AdminApi.Controllers
@@ -17,33 +18,50 @@ namespace AdminApi.Controllers
     {
         private readonly ILogger logger;
         private readonly IUserService userService;
-        private readonly IRoleService roleService;
+        private readonly IUserRoleService userRoleService;
 
-        public LoginController(ILogger logger, IUserService userService, IRoleService roleService)
+        public LoginController(ILogger logger, IUserService userService, IUserRoleService userRoleService)
         {
             this.logger = logger;
             this.userService = userService;
-            this.roleService = roleService;
+            this.userRoleService = userRoleService;
         }
 
 
-        [HttpGet]
-        [Route("LoginAsync")]
-        public async Task<MessageModel<TokenInfoViewModel>> LoginAsync(string Account, string Password)
+        [HttpPost]
+        [Route("Login")]
+        public async Task<MessageModel<TokenInfoViewModel>> Login([FromBody] LoginForm loginForm)
         {
             try
             {
-                if (string.IsNullOrEmpty(Account) || string.IsNullOrEmpty(Password))
+                if (string.IsNullOrEmpty(loginForm.username) || string.IsNullOrEmpty(loginForm.password))
                     return new MessageModel<TokenInfoViewModel> { Status = 201, Msg = "用户名或密码不能为空" };
 
-                Password = SHA256Encryption.SHA256Hash(Password);
+                string Password = SHA256Encryption.SHA256Hash(loginForm.password);
 
-                var model = await userService.GetSingleAsync(Account, Password);
+                var user = await userService.GetSingleAsync(loginForm.username, Password);
 
-                if (model == null)
+                if (user == null)
                     return new MessageModel<TokenInfoViewModel> { Status = 201, Msg = "账号或密码错误,请重试!" };
 
-                return null;
+                string roles = await userRoleService.GetUserAllRolesName(user.Id);
+
+                string token = JwtHelper.IssueJwt(new TokenModelJwt
+                {
+                    Role = roles,
+                    ID = user.Id.ToString()
+                });
+                return new MessageModel<TokenInfoViewModel>
+                {
+                    Msg = "登录成功",
+                    Status = 200,
+                    Response = new TokenInfoViewModel
+                    {
+                        access_token = token,
+                        token_type = "Bearer",
+                        expires_in = 3600
+                    }
+                };
             }
             catch (Exception ex)
             {
@@ -51,5 +69,37 @@ namespace AdminApi.Controllers
                 return new MessageModel<TokenInfoViewModel>();
             }
         }
+
+
+        [HttpGet]
+        [Route("GetUserInfo")]
+        public async Task<MessageModel<UserInfo_Model>> GetUserInfo(string token)
+        {
+            try
+            {
+                TokenModelJwt tokenModelJwt = JwtHelper.SerializeJwt(token);
+                List<string> roles = new List<string>();
+                foreach (var item in tokenModelJwt.Role.Split(','))
+                {
+                    roles.Add(item.Trim());
+                }
+
+                return new MessageModel<UserInfo_Model> { Msg = "获取成功", Status = 200, Response = new UserInfo_Model { roles = roles } };
+            }
+            catch (Exception ex)
+            {
+
+                logger.Error(ex, ex.Message.ToString());
+                return new MessageModel<UserInfo_Model>();
+            }
+
+
+        }
+    }
+
+    public class LoginForm
+    {
+        public string username { get; set; }
+        public string password { get; set; }
     }
 }

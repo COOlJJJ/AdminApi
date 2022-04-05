@@ -16,6 +16,7 @@ using AdminApi.Context.DomainModel;
 using AdminApi.Context.Repository;
 using AdminApi.IService;
 using AdminApi.Service;
+using Extensions;
 
 namespace AdminApi
 {
@@ -31,6 +32,8 @@ namespace AdminApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton(new Appsettings(Configuration));
+
             services.AddSingleton<ILogger>(Log.Logger);
             services.AddDbContext<AdminContext>(option =>
             {
@@ -43,10 +46,15 @@ namespace AdminApi
 
 
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IUserRoleService, UserRoleService>();
             services.AddTransient<IRoleService, RoleService>();
 
             services.AddControllers();
             services.AddCors(options => { options.AddPolicy("CorsPolicy", builder => builder.SetIsOriginAllowed((host) => true).AllowAnyMethod().AllowAnyHeader().AllowCredentials()); });
+
+            //401 Unauthorized响应 应该用来表示缺失或错误的认证；
+            //403 Forbidden响应 应该在这之后用，当用户被认证后，但用户没有被授权在特定资源上执行操作。
+
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(option =>
                    {
@@ -67,10 +75,17 @@ namespace AdminApi
                        };
                    });
 
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("user", policy => policy.RequireRole("user").Build());//单独角色
+                options.AddPolicy("admin", policy => policy.RequireRole("admin").Build());
+                options.AddPolicy("userOradmin", policy => policy.RequireRole("user", "admin"));//或的关系
+                //options.AddPolicy("userAndadmin", policy => policy.RequireRole("user").RequireRole("admin"));//且的关系
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Admin API", Version = "v1" });
-
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {

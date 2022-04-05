@@ -23,12 +23,12 @@ namespace Extensions
 
             var claims = new List<Claim>
                 {
-                new Claim(JwtRegisteredClaimNames.Iat, $"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}"),
+                new Claim(JwtRegisteredClaimNames.Iat,$"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}"),
                 new Claim(JwtRegisteredClaimNames.Nbf,$"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}") ,
                 new Claim(JwtRegisteredClaimNames.Iss,iss),
                 new Claim(JwtRegisteredClaimNames.Aud,aud),
                 new Claim(ClaimTypes.Name,tokenModel.ID),//用户Id
-               };
+                };
 
             // 可以将一个用户的多个角色全部赋予；
             claims.AddRange(tokenModel.Role.Split(',').Select(s => new Claim(ClaimTypes.Role, s)));
@@ -40,7 +40,7 @@ namespace Extensions
             var jwt = new JwtSecurityToken(
               issuer: iss,
               claims: claims,
-              expires: DateTime.Now.AddDays(7),
+              expires: DateTime.Now.AddHours(1),
               signingCredentials: creds);
 
             var jwtHandler = new JwtSecurityTokenHandler();

@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Text;
-using Extensions;
+﻿using Extensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
 
 
 namespace AdminApi.Controllers
 {
-    [Route("api/[controller]")]
-    public class UserController : Controller
+    [Route("api/User")]
+    [ApiController]
+    [Authorize(Policy = "userOradmin")]
+    public class UserController : ControllerBase
     {
         private readonly ILogger _loggger;
 
@@ -19,23 +18,20 @@ namespace AdminApi.Controllers
             _loggger = logger;
         }
 
-        // GET: api/values
+        [Route("Get")]
+        [Authorize(Policy = "admin")]
         [HttpGet]
         public string Get()
         {
+            return SHA256Encryption.SHA256Hash("123456");
+        }
 
-            try
-            {
-                return SHA256Encryption.SHA256Hash("123456");
-            }
-            catch (Exception ex)
-            {
-                _loggger.Debug("This is index -- debug.");
-                _loggger.Information($"‘{typeof(UserController)}’ This is index -- information.");
-                _loggger.Warning("This is index -- warning.");
-                _loggger.Error("This is index -- error." + ex.ToString());
-                return SHA256Encryption.SHA256Hash("123456");
-            }
+        [Route("HelloWorld")]
+        [Authorize(Policy = "user")]
+        [HttpGet]
+        public string HelloWorld()
+        {
+            return "HelloWorld";
         }
 
 
