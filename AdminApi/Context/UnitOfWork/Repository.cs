@@ -1,6 +1,4 @@
-﻿
-
-namespace AdminApi
+﻿namespace AdminApi
 {
     using System;
     using System.Collections.Generic;

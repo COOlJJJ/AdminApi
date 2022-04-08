@@ -9,7 +9,7 @@ namespace AdminApi
     public class Program
     {
         /// <summary>
-        /// 基础的用户管理和分配权限 以及JWT滑动刷新&Redis缓存测试&MQ集成&Docker容器化
+        /// 基础的用户管理和分配角色 以及token登录&Docker容器化&Nginx反向代理
         /// </summary>
         /// <param name="args"></param>
         public static void Main(string[] args)

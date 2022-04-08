@@ -1,4 +1,5 @@
-﻿using AdminApi.IService;
+﻿using AdminApi.Context.DomainModel;
+using AdminApi.IService;
 using Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -78,13 +79,10 @@ namespace AdminApi.Controllers
             try
             {
                 TokenModelJwt tokenModelJwt = JwtHelper.SerializeJwt(token);
-                List<string> roles = new List<string>();
-                foreach (var item in tokenModelJwt.Role.Split(','))
-                {
-                    roles.Add(item.Trim());
-                }
-
-                return new MessageModel<UserInfo_Model> { Msg = "获取成功", Status = 200, Response = new UserInfo_Model { roles = roles } };
+                int userid = Convert.ToInt32(tokenModelJwt.ID);
+                User user = await userService.GetSingleAsync(userid);
+                List<string> roles = await userRoleService.GetUserAllRolesNameList(userid);
+                return new MessageModel<UserInfo_Model> { Msg = "获取成功", Status = 200, Response = new UserInfo_Model { roles = roles, name = user.UserName, userid = user.Id, email = user.Email } };
             }
             catch (Exception ex)
             {
@@ -92,8 +90,6 @@ namespace AdminApi.Controllers
                 logger.Error(ex, ex.Message.ToString());
                 return new MessageModel<UserInfo_Model>();
             }
-
-
         }
     }
 

@@ -1,9 +1,10 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AdminApi.Migrations
 {
-    public partial class myfirstcommit : Migration
+    public partial class mysql : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +13,7 @@ namespace AdminApi.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     CreateDate = table.Column<DateTime>(nullable: false),
                     UpdateDate = table.Column<DateTime>(nullable: false),
                     Name = table.Column<string>(nullable: true),
@@ -28,7 +29,7 @@ namespace AdminApi.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     CreateDate = table.Column<DateTime>(nullable: false),
                     UpdateDate = table.Column<DateTime>(nullable: false),
                     Account = table.Column<string>(nullable: true),
@@ -48,7 +49,7 @@ namespace AdminApi.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     CreateDate = table.Column<DateTime>(nullable: false),
                     UpdateDate = table.Column<DateTime>(nullable: false),
                     UserID = table.Column<int>(nullable: false),

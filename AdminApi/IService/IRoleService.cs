@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace AdminApi.IService
 {
-    public interface IRoleService:IBaseService<Role>
+    public interface IRoleService : IBaseService<Role>
     {
-
+        Task<List<Role>> GetAllRolesAsync();
     }
 }

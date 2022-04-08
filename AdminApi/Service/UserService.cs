@@ -36,14 +36,15 @@ namespace AdminApi.Service
             return false;
         }
 
-        public async Task<List<User>> GetAllAsync(QueryParameter parameter)
+        public async Task<PagedList<User>> GetAllAsync(QueryParameter parameter)
         {
             var repository = work.GetRepository<User>();
-            var users = await repository.GetPagedListAsync(null,
-               pageIndex: parameter.PageIndex,
-               pageSize: parameter.PageSize,
-               orderBy: source => source.OrderByDescending(t => t.CreateDate));
-            return (List<User>)users;
+            var reuslt = await repository.GetPagedListAsync(
+                predicate: x => string.IsNullOrWhiteSpace(parameter.Search) ? true : x.UserName.Contains(parameter.Search),
+                pageIndex: parameter.PageIndex,
+                pageSize: parameter.PageSize,
+                orderBy: source => source.OrderBy(t => t.Id));
+            return (PagedList<User>)reuslt;
         }
 
         public async Task<User> GetSingleAsync(int id)
@@ -57,7 +58,7 @@ namespace AdminApi.Service
         {
             var user = await work.GetRepository<User>().GetFirstOrDefaultAsync(predicate:
                              x => (x.Account.Equals(Account)) &&
-                             (x.PassWord.Equals(Password)) && x.Status == 1);
+                             (x.PassWord.Equals(Password)) && x.Status == "1");
             return user;
         }
 
@@ -67,9 +68,37 @@ namespace AdminApi.Service
             var repository = work.GetRepository<User>();
             var user = await repository.GetFirstOrDefaultAsync(predicate: x => x.Id.Equals(model.Id));
 
-            user.UserName = model.UserName;
+            user.ReMark = model.ReMark;
             user.UpdateDate = DateTime.Now;
+            repository.Update(user);
 
+            if (await work.SaveChangesAsync() > 0)
+                return true;
+            return false;
+        }
+
+        public async Task<bool> UpdatePasswordAsync(int userid, string password)
+        {
+
+            var repository = work.GetRepository<User>();
+            var user = await repository.GetFirstOrDefaultAsync(predicate: x => x.Id.Equals(userid));
+
+            user.PassWord = password;
+            user.UpdateDate = DateTime.Now;
+            repository.Update(user);
+
+            if (await work.SaveChangesAsync() > 0)
+                return true;
+            return false;
+        }
+
+        public async Task<bool> UpdateStatusAsync(int userid, string status)
+        {
+            var repository = work.GetRepository<User>();
+            var user = await repository.GetFirstOrDefaultAsync(predicate: x => x.Id.Equals(userid));
+
+            user.Status = status;
+            user.UpdateDate = DateTime.Now;
             repository.Update(user);
 
             if (await work.SaveChangesAsync() > 0)

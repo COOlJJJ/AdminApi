@@ -37,10 +37,11 @@ namespace Extensions
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
+            //过期时间7天 过期登录
             var jwt = new JwtSecurityToken(
               issuer: iss,
               claims: claims,
-              expires: DateTime.Now.AddHours(1),
+              expires: DateTime.Now.AddDays(7),
               signingCredentials: creds);
 
             var jwtHandler = new JwtSecurityTokenHandler();

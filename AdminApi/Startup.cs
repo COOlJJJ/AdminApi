@@ -17,6 +17,9 @@ using AdminApi.Context.Repository;
 using AdminApi.IService;
 using AdminApi.Service;
 using Extensions;
+using AutoMapper;
+using AdminApi.AutoMapperConfig;
+
 
 namespace AdminApi
 {
@@ -37,13 +40,20 @@ namespace AdminApi
             services.AddSingleton<ILogger>(Log.Logger);
             services.AddDbContext<AdminContext>(option =>
             {
-                var connectionString = Configuration.GetConnectionString("SqlStr");
-                option.UseSqlServer(connectionString);
+                var connectionString = Configuration.GetConnectionString("sqlstr");
+                option.UseMySql(connectionString);
             }).AddUnitOfWork<AdminContext>()
             .AddCustomRepository<User, UserRepository>()
             .AddCustomRepository<Role, RoleRepository>()
             .AddCustomRepository<UserRole, UserRoleRepository>();
 
+            //添加AutoMapper
+            var automapperConfog = new MapperConfiguration(config =>
+            {
+                config.AddProfile(new AutoMapperProFile());
+            });
+
+            services.AddSingleton(automapperConfog.CreateMapper());
 
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IUserRoleService, UserRoleService>();

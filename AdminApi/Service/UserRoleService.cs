@@ -35,14 +35,14 @@ namespace AdminApi.Service
             return false;
         }
 
-        public async Task<List<UserRole>> GetAllAsync(QueryParameter parameter)
+        public async Task<PagedList<UserRole>> GetAllAsync(QueryParameter parameter)
         {
             var repository = work.GetRepository<UserRole>();
             var userRoles = await repository.GetPagedListAsync(null,
                pageIndex: parameter.PageIndex,
                pageSize: parameter.PageSize,
                orderBy: source => source.OrderByDescending(t => t.CreateDate));
-            return (List<UserRole>)userRoles;
+            return (PagedList<UserRole>)userRoles;
         }
 
         public async Task<UserRole> GetSingleAsync(int id)
@@ -82,6 +82,44 @@ namespace AdminApi.Service
                 roles = roles[0..^1];
             }
             return roles;
+        }
+
+        public async Task<bool> GiveRoles(int userid, List<string> roles)
+        {
+            //赋予角色
+            bool result = true;
+            var rolerepository = work.GetRepository<Role>();
+            var userRolerepository = work.GetRepository<UserRole>();
+            var userRoles = await userRolerepository.GetAllAsync(predicate: x => x.UserID == userid);
+            //清空当前用户的角色
+            foreach (var item in userRoles)
+            {
+                userRolerepository.Delete(item.Id);
+            }
+            //建立新的角色
+            foreach (var item in roles)
+            {
+                var role = rolerepository.GetFirstOrDefault(predicate: x => x.Name == item);
+                bool IsOk = await AddAsync(new UserRole { RoleID = role.Id, UserID = userid, UpdateDate = DateTime.Now, CreateDate = DateTime.Now });
+                if (IsOk == false)
+                    result = false;
+            }
+            return result;
+        }
+
+        public async Task<List<string>> GetUserAllRolesNameList(int UserId)
+        {
+            var repository = work.GetRepository<UserRole>();
+            var userRoles = await repository.GetAllAsync(predicate: x => x.UserID == UserId);
+            string roles = string.Empty;
+            List<string> roleslist = new List<string>();
+            foreach (var item in userRoles)
+            {
+                var role = await work.GetRepository<Role>().GetFirstOrDefaultAsync(predicate: x => x.Id == item.RoleID);
+                roleslist.Add(role.Name);
+            }
+
+            return roleslist;
         }
     }
 }

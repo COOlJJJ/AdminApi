@@ -36,14 +36,21 @@ namespace AdminApi.Service
             return false;
         }
 
-        public async Task<List<Role>> GetAllAsync(QueryParameter parameter)
+        public async Task<PagedList<Role>> GetAllAsync(QueryParameter parameter)
         {
             var repository = work.GetRepository<Role>();
             var roles = await repository.GetPagedListAsync(null,
                pageIndex: parameter.PageIndex,
                pageSize: parameter.PageSize,
                orderBy: source => source.OrderByDescending(t => t.CreateDate));
-            return (List<Role>)roles;
+            return (PagedList<Role>)roles;
+        }
+
+        public async Task<List<Role>> GetAllRolesAsync()
+        {
+            var repository = work.GetRepository<Role>();
+            var result = await repository.GetAllAsync();
+            return (List<Role>)result;
         }
 
         public async Task<Role> GetSingleAsync(int id)

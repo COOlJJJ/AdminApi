@@ -6,7 +6,7 @@ namespace AdminApi.IService
 {
     public interface IBaseService<T> where T : class
     {
-        Task<List<T>> GetAllAsync(QueryParameter query);
+        Task<PagedList<T>> GetAllAsync(QueryParameter query);
 
         Task<T> GetSingleAsync(int id);
 

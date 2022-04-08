@@ -30,6 +30,7 @@
             {
                 throw new ArgumentException($"indexFrom: {indexFrom} > pageIndex: {pageIndex}, must indexFrom <= pageIndex");
             }
+         
             //数据源大小
             var count = await source.CountAsync(cancellationToken).ConfigureAwait(false);
 
