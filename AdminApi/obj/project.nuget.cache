@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i5br1hgjI5jsnX+Kd3a2HhuAo45ghiLpJHjZTHubkZkE2ZH4QbKcOYUvEJpxD5fez7YRUv6AqUimPl6KlvTo/A==",
+  "dgSpecHash": "0R8F7o070akgV50Dm48kYInLbfEvcLyY/i85eG0s/BMin/jiFceUG+p2fYSaLEJH6b67YlSkfnq7Cn1rtLoUgA==",
   "success": true,
-  "projectFilePath": "D:\\UserData\\Z0047YMR\\Documents\\GitHub\\AdminApi\\adminapi\\AdminApi.csproj",
+  "projectFilePath": "D:\\UserData\\Z0047YMR\\Documents\\GitHub\\AdminApi\\AdminApi\\AdminApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Z0047YMR\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Z0047YMR\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.0\\microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
@@ -142,8 +142,7 @@
     "C:\\Users\\Z0047YMR\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Z0047YMR\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Z0047YMR\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Z0047YMR\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Z0047YMR\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+    "C:\\Users\\Z0047YMR\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

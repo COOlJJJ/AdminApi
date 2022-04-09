@@ -152,3 +152,4 @@ D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\AdminApi\obj\Debug\netcoreapp3.1\
 D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\AdminApi\obj\Debug\netcoreapp3.1\AdminApi.dll
 D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\AdminApi\obj\Debug\netcoreapp3.1\AdminApi.pdb
 D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\AdminApi\obj\Debug\netcoreapp3.1\AdminApi.genruntimeconfig.cache
+D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\AdminApi\bin\Debug\netcoreapp3.1\Dockerfile

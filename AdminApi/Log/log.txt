@@ -19931,3 +19931,139 @@ LIMIT 1
 2022-04-08 22:59:36.112 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 72.8955 ms
 2022-04-08 22:59:36.112 +08:00 [INF] Request finished in 73.5444ms 200 application/json;charset=utf-8
 2022-04-08 23:04:06.075 +08:00 [INF] Application is shutting down...
+2022-04-09 00:31:28.318 +00:00 [INF] Starting host
+2022-04-09 00:31:29.146 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2022-04-09 00:31:29.149 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-04-09 00:31:29.168 +00:00 [INF] Creating key "5ff5e4df-3b02-4de8-b624-a3e0c4fa0136" with creation date "2022-04-09T00:31:29.1648636+00:00", activation date "2022-04-09T00:31:29.1590392+00:00", and expiration date "2022-07-08T00:31:29.1590392+00:00".
+2022-04-09 00:31:29.182 +00:00 [WRN] No XML encryptor configured. Key "5ff5e4df-3b02-4de8-b624-a3e0c4fa0136" may be persisted to storage in unencrypted form.
+2022-04-09 00:31:29.185 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-5ff5e4df-3b02-4de8-b624-a3e0c4fa0136.xml'.
+2022-04-09 00:31:29.478 +00:00 [INF] Now listening on: http://[::]:80
+2022-04-09 00:31:29.479 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-09 00:31:29.479 +00:00 [INF] Hosting environment: Development
+2022-04-09 00:31:29.479 +00:00 [INF] Content root path: /app
+2022-04-09 00:31:31.231 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:49154/  
+2022-04-09 00:31:31.254 +00:00 [INF] HTTP GET / responded 301 in 13.1272 ms
+2022-04-09 00:31:31.259 +00:00 [INF] Request finished in 30.6963ms 301 
+2022-04-09 00:31:31.272 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:49154/index.html  
+2022-04-09 00:31:31.305 +00:00 [INF] HTTP GET /index.html responded 200 in 32.0217 ms
+2022-04-09 00:31:31.306 +00:00 [INF] Request finished in 34.0697ms 200 text/html;charset=utf-8
+2022-04-09 00:31:31.319 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:49154/swagger-ui-bundle.js  
+2022-04-09 00:31:31.319 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:49154/swagger-ui.css  
+2022-04-09 00:31:31.322 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:49154/swagger-ui-standalone-preset.js  
+2022-04-09 00:31:31.461 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-04-09 00:31:31.461 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-04-09 00:31:31.475 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-04-09 00:31:31.475 +00:00 [INF] HTTP GET /swagger-ui.css responded 200 in 154.181 ms
+2022-04-09 00:31:31.475 +00:00 [INF] HTTP GET /swagger-ui-standalone-preset.js responded 200 in 152.3497 ms
+2022-04-09 00:31:31.476 +00:00 [INF] HTTP GET /swagger-ui-bundle.js responded 200 in 155.411 ms
+2022-04-09 00:31:31.477 +00:00 [INF] Request finished in 157.9098ms 200 text/css
+2022-04-09 00:31:31.477 +00:00 [INF] Request finished in 157.9178ms 200 application/javascript
+2022-04-09 00:31:31.477 +00:00 [INF] Request finished in 155.4515ms 200 application/javascript
+2022-04-09 00:31:31.616 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:49154/swagger/v1/swagger.json  
+2022-04-09 00:31:31.644 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:49154/favicon-32x32.png  
+2022-04-09 00:31:31.645 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-04-09 00:31:31.646 +00:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 0.911 ms
+2022-04-09 00:31:31.646 +00:00 [INF] Request finished in 2.362ms 200 image/png
+2022-04-09 00:31:31.700 +00:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 81.8554 ms
+2022-04-09 00:31:31.701 +00:00 [INF] Request finished in 85.2155ms 200 application/json;charset=utf-8
+2022-04-09 00:31:35.985 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:49154/index.html  
+2022-04-09 00:31:35.990 +00:00 [INF] HTTP GET /index.html responded 200 in 3.2667 ms
+2022-04-09 00:31:35.993 +00:00 [INF] Request finished in 8.2781ms 200 text/html;charset=utf-8
+2022-04-09 00:31:36.202 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:49154/swagger/v1/swagger.json  
+2022-04-09 00:31:36.223 +00:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 19.8917 ms
+2022-04-09 00:31:36.225 +00:00 [INF] Request finished in 22.4379ms 200 application/json;charset=utf-8
+2022-04-09 08:59:46.421 +08:00 [INF] Starting host
+2022-04-09 08:59:48.341 +08:00 [INF] User profile is available. Using 'C:\Users\Z0047YMR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-04-09 08:59:48.927 +08:00 [INF] Now listening on: http://localhost:5000
+2022-04-09 08:59:48.928 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-09 08:59:48.929 +08:00 [INF] Hosting environment: Development
+2022-04-09 08:59:48.930 +08:00 [INF] Content root path: D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\AdminApi
+2022-04-09 08:59:49.853 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html  
+2022-04-09 08:59:50.624 +08:00 [INF] HTTP GET /index.html responded 200 in 719.0682 ms
+2022-04-09 08:59:50.625 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js  
+2022-04-09 08:59:50.632 +08:00 [INF] Request finished in 7.1021ms 200 application/javascript; charset=utf-8
+2022-04-09 08:59:50.634 +08:00 [INF] Request finished in 784.1348ms 200 text/html;charset=utf-8
+2022-04-09 08:59:50.779 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2022-04-09 08:59:50.859 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 78.5734 ms
+2022-04-09 08:59:50.862 +08:00 [INF] Request finished in 82.6235ms 200 application/json;charset=utf-8
+2022-04-09 09:44:32.574 +08:00 [INF] Starting host
+2022-04-09 09:44:34.075 +08:00 [INF] User profile is available. Using 'C:\Users\Z0047YMR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-04-09 09:44:34.604 +08:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://[::1]:8080: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2022-04-09 09:44:34.786 +08:00 [FTL] Host terminated unexpectedly
+System.IO.IOException: Failed to bind to address http://[::1]:8080: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at AdminApi.Program.Main(String[] args) in D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\AdminApi\Program.cs:line 29
+2022-04-09 09:45:04.073 +08:00 [INF] Starting host
+2022-04-09 09:45:05.132 +08:00 [INF] User profile is available. Using 'C:\Users\Z0047YMR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-04-09 09:45:05.572 +08:00 [INF] Now listening on: http://localhost:8080
+2022-04-09 09:45:05.574 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-09 09:45:05.575 +08:00 [INF] Hosting environment: Development
+2022-04-09 09:45:05.575 +08:00 [INF] Content root path: D:\UserData\Z0047YMR\Documents\GitHub\AdminApi\AdminApi
+2022-04-09 09:45:18.720 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/  
+2022-04-09 09:45:18.768 +08:00 [INF] HTTP GET / responded 301 in 14.9861 ms
+2022-04-09 09:45:18.791 +08:00 [INF] Request finished in 73.453ms 301 
+2022-04-09 09:45:18.814 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/index.html  
+2022-04-09 09:45:19.029 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger-ui-bundle.js  
+2022-04-09 09:45:19.029 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger-ui-standalone-preset.js  
+2022-04-09 09:45:19.029 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger-ui.css  
+2022-04-09 09:45:19.030 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/_framework/aspnetcore-browser-refresh.js  
+2022-04-09 09:45:19.033 +08:00 [INF] HTTP GET /index.html responded 200 in 216.8855 ms
+2022-04-09 09:45:19.034 +08:00 [INF] Request finished in 4.3138ms 200 application/javascript; charset=utf-8
+2022-04-09 09:45:19.038 +08:00 [INF] Request finished in 223.2981ms 200 text/html;charset=utf-8
+2022-04-09 09:45:19.068 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-04-09 09:45:19.068 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-04-09 09:45:19.070 +08:00 [INF] HTTP GET /swagger-ui.css responded 200 in 37.8209 ms
+2022-04-09 09:45:19.071 +08:00 [INF] HTTP GET /swagger-ui-standalone-preset.js responded 200 in 40.1023 ms
+2022-04-09 09:45:19.074 +08:00 [INF] Request finished in 44.621ms 200 text/css
+2022-04-09 09:45:19.077 +08:00 [INF] Request finished in 47.2115ms 200 application/javascript
+2022-04-09 09:45:19.078 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-04-09 09:45:19.081 +08:00 [INF] HTTP GET /swagger-ui-bundle.js responded 200 in 50.194 ms
+2022-04-09 09:45:19.083 +08:00 [INF] Request finished in 54.5086ms 200 application/javascript
+2022-04-09 09:45:19.226 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json  
+2022-04-09 09:45:19.241 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/favicon-32x32.png  
+2022-04-09 09:45:19.243 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-04-09 09:45:19.245 +08:00 [INF] HTTP GET /favicon-32x32.png responded 200 in 2.2581 ms
+2022-04-09 09:45:19.248 +08:00 [INF] Request finished in 7.1048ms 200 image/png
+2022-04-09 09:45:19.307 +08:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 78.9501 ms
+2022-04-09 09:45:19.310 +08:00 [INF] Request finished in 84.3597ms 200 application/json;charset=utf-8

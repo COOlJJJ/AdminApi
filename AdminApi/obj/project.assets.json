@@ -7028,24 +7028,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Z0047YMR\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Z0047YMR\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UserData\\Z0047YMR\\Documents\\GitHub\\AdminApi\\adminapi\\AdminApi.csproj",
+      "projectUniqueName": "D:\\UserData\\Z0047YMR\\Documents\\GitHub\\AdminApi\\AdminApi\\AdminApi.csproj",
       "projectName": "AdminApi",
-      "projectPath": "D:\\UserData\\Z0047YMR\\Documents\\GitHub\\AdminApi\\adminapi\\AdminApi.csproj",
+      "projectPath": "D:\\UserData\\Z0047YMR\\Documents\\GitHub\\AdminApi\\AdminApi\\AdminApi.csproj",
       "packagesPath": "C:\\Users\\Z0047YMR\\.nuget\\packages\\",
-      "outputPath": "D:\\UserData\\Z0047YMR\\Documents\\GitHub\\AdminApi\\adminapi\\obj\\",
+      "outputPath": "D:\\UserData\\Z0047YMR\\Documents\\GitHub\\AdminApi\\AdminApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Z0047YMR\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7136,12 +7131,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.21, 3.1.21]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7150,7 +7139,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

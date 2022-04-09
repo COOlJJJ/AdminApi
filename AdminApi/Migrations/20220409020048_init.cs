@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AdminApi.Migrations
 {
-    public partial class mysql : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -36,7 +36,7 @@ namespace AdminApi.Migrations
                     UserName = table.Column<string>(nullable: true),
                     PassWord = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
-                    Status = table.Column<int>(nullable: false),
+                    Status = table.Column<string>(nullable: true),
                     ReMark = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

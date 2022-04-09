@@ -1,9 +1,15 @@
-﻿using System;
-using System.Text;
+﻿using AdminApi.AutoMapperConfig;
 using AdminApi.Context;
+using AdminApi.Context.DomainModel;
+using AdminApi.Context.Repository;
+using AdminApi.IService;
+using AdminApi.Service;
+using AutoMapper;
+using Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,14 +17,8 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Model;
 using Serilog;
-using Microsoft.EntityFrameworkCore;
-using AdminApi.Context.DomainModel;
-using AdminApi.Context.Repository;
-using AdminApi.IService;
-using AdminApi.Service;
-using Extensions;
-using AutoMapper;
-using AdminApi.AutoMapperConfig;
+using System;
+using System.Text;
 
 
 namespace AdminApi
